@@ -54,12 +54,12 @@
   <nav class="site-nav__inner" aria-label="Principal">
     <a class="site-nav__logo" href="#top"><img src="assets/img/logo-imb.png" alt="IMB, ir al inicio" width="41" height="50"></a>
     <ul class="site-nav__links" id="nav-links">
-      <li><a href="#diferenciales">Diferenciales</a></li>
-      <li><a href="#para-quien-es">Para quién es</a></li>
+      <li><a href="#diferenciales">Por qué elegirnos</a></li>
+      <li><a href="#soluciones">Soluciones</a></li>
       <li><a href="#programas">Programas</a></li>
       <li><a href="#trayectoria">Trayectoria</a></li>
       <li><a href="#modalidades">Modalidades</a></li>
-      <li><a href="#evento">Evento</a></li>
+      <li><a href="#novedades">Novedades</a></li>
       <li><a href="#nosotros">Nosotros</a></li>
     </ul>
     <!-- PENDIENTE: en Figma este botón dice "Button". Se usó "Hablemos" y apunta al formulario. -->
@@ -72,17 +72,21 @@
 
 <main id="top">
   <!-- HERO -->
+  <!-- PENDIENTE: reemplazar la imagen de fondo (css/landing.css, .hero) por la foto del plantel de profesores. -->
   <section class="hero" aria-labelledby="hero-title">
     <div class="hero__content">
-      <p class="hero__eyebrow">Consultoría ejecutiva · Formación · Speakers</p>
-      <h1 class="hero__title" id="hero-title">De la estrategia<br>a la ejecución.</h1>
-      <p class="hero__text">Ayudamos a líderes y organizaciones a evaluar proyectos, reenfocar objetivos y convertir la estrategia en ejecución.</p>
-      <a class="btn btn--secondary btn--filled" href="#programas">Conocer los programas<svg class="icon" aria-hidden="true"><use href="#i-chevron-right"/></svg></a>
+      <p class="hero__eyebrow">Consultoría · Certificaciones · Speakers</p>
+      <h1 class="hero__title" id="hero-title">Expertos que llevan<br>la estrategia a la ejecución.</h1>
+      <p class="hero__text">Un plantel de consultores y docentes con experiencia en grandes empresas, listo para trabajar con tu organización.</p>
+      <div class="hero__actions">
+        <a class="btn btn--secondary btn--filled" href="#soluciones">Ver soluciones para empresas<svg class="icon" aria-hidden="true"><use href="#i-chevron-right"/></svg></a>
+        <a class="btn btn--inverse btn--outline hero__btn-ghost" href="#antonio">Conocer a Antonio Nieto-Rodríguez<svg class="icon" aria-hidden="true"><use href="#i-arrow-down"/></svg></a>
+      </div>
     </div>
   </section>
 
   <div class="page">
-    <!-- DIFERENCIALES -->
+    <!-- POR QUÉ ELEGIRNOS -->
     <section class="section" id="diferenciales" aria-labelledby="dif-title">
       <div class="section-head">
         <p class="section-head__eyebrow">Lo que nos hace diferentes</p>
@@ -90,62 +94,117 @@
       </div>
       <div class="why-grid">
         <article class="why-card">
-          <img src="assets/img/diferencial-metodologia.jpg" alt="" loading="lazy">
-          <h3>Metodología certificada APMG</h3>
-          <p>Metodologías y estándares aplicados a los desafíos reales de las organizaciones.</p>
+          <img src="assets/img/diferencial-respaldo.jpg" alt="" loading="lazy">
+          <h3>Respaldo institucional</h3>
+          <p>La trayectoria y el respaldo académico de IMB Institute detrás de cada proyecto.</p>
         </article>
         <article class="why-card">
           <img src="assets/img/diferencial-ejecucion.jpg" alt="" loading="lazy">
-          <h3>Foco en ejecución</h3>
-          <p>Convertimos el conocimiento en acciones aplicables y orientadas a resultados.</p>
+          <h3>Foco en resultados</h3>
+          <p>Convertimos el conocimiento en acciones concretas y medibles para tu organización.</p>
         </article>
         <article class="why-card">
-          <img src="assets/img/diferencial-respaldo.jpg" alt="" loading="lazy">
-          <h3>Respaldo académico de IMB Institute</h3>
-          <p>La experiencia y el respaldo institucional de IMB detrás de cada solución.</p>
+          <img src="assets/img/diferencial-metodologia.jpg" alt="" loading="lazy">
+          <h3>Certificación internacional</h3>
+          <p>Metodologías de referencia en la industria, avaladas por los principales organismos certificadores.</p>
         </article>
+      </div>
+      <!-- PENDIENTE: confirmar listado de certificaciones (y sumar logos si se dispone de autorización). -->
+      <div class="certs">
+        <p class="certs__label">Trabajamos con estándares de</p>
+        <ul class="certs__list">
+          <li>Scrum</li>
+          <li>PMI</li>
+          <li>IRCA</li>
+          <li>APMG</li>
+        </ul>
       </div>
     </section>
 
-    <!-- PARA QUIÉN ES -->
-    <section class="section" id="para-quien-es" aria-labelledby="pq-title">
+    <!-- SOLUCIONES PARA EMPRESAS -->
+    <section class="section" id="soluciones" aria-labelledby="sol-title">
       <div class="section-head">
-        <p class="section-head__eyebrow">Para quién es</p>
-        <h2 class="section-head__title" id="pq-title">¿Qué necesitas hoy?</h2>
+        <p class="section-head__eyebrow">Para tu organización</p>
+        <h2 class="section-head__title" id="sol-title">Soluciones para empresas</h2>
       </div>
-      <p class="lead">Seleccioná el camino que mejor responde a tu desafío.</p>
-      <ul class="options">
-        <li><a class="option" href="#contacto" data-interes="consultoria">Consultoría para mi empresa<svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a></li>
-        <li><a class="option" href="#contacto" data-interes="certificacion">Certificarme<svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a></li>
-        <li><a class="option" href="#contacto" data-interes="llamada">Agendar una llamada<svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a></li>
+      <p class="lead">¿Qué necesita tu organización hoy? Elige el desafío y te contactamos con la propuesta adecuada.</p>
+      <ul class="solutions">
+        <li><a class="solution" href="#contacto" data-interes="consultoria">
+          <svg class="icon" aria-hidden="true"><use href="#i-target"/></svg>
+          <h3>Consultoría</h3>
+          <p>Diagnóstico, viabilidad de proyectos y acompañamiento en la ejecución de la estrategia.</p>
+        </a></li>
+        <li><a class="solution" href="#contacto" data-interes="certificacion">
+          <svg class="icon" aria-hidden="true"><use href="#i-award"/></svg>
+          <h3>Certificaciones para equipos</h3>
+          <p>Formación y certificación internacional para los profesionales de tu organización.</p>
+        </a></li>
+        <li><a class="solution" href="#contacto" data-interes="auditoria">
+          <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+          <h3>Auditorías</h3>
+          <p>Evaluamos procesos y sistemas de gestión frente a normas y buenas prácticas.</p>
+        </a></li>
+        <li><a class="solution" href="#contacto" data-interes="estandares">
+          <svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>
+          <h3>Implementación de estándares</h3>
+          <p>Implementamos protocolos y estándares de gestión adaptados a tu operación.</p>
+        </a></li>
+        <li><a class="solution" href="#contacto" data-interes="ia">
+          <svg class="icon" aria-hidden="true"><use href="#i-settings"/></svg>
+          <h3>Automatización con IA</h3>
+          <p>Automatizamos procesos y servicios con inteligencia artificial para ganar eficiencia.</p>
+        </a></li>
+        <li><a class="solution solution--cta" href="#contacto" data-interes="otro">
+          <h3>¿Tu desafío es otro?</h3>
+          <p>Cuéntanos qué necesitas y armamos una solución a medida.</p>
+          <span class="solution__more">Hablemos <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+        </a></li>
       </ul>
     </section>
 
-    <!-- PROGRAMAS -->
+    <!-- PROGRAMAS Y SERVICIOS -->
     <section class="section" id="programas" aria-labelledby="prog-title">
       <div class="section-head">
-        <p class="section-head__eyebrow">Soluciones para cada desafío</p>
+        <p class="section-head__eyebrow">Los más demandados</p>
         <h2 class="section-head__title" id="prog-title">Programas y servicios</h2>
       </div>
+      <!-- PENDIENTE: confirmar cuáles son los programas/servicios más vendidos. -->
       <div class="programs">
-        <article class="program">
-          <img src="assets/img/programa-asesorias.jpg" alt="Consultor revisando un proyecto con un cliente" loading="lazy">
-          <div class="program__body">
-            <span class="tag">Consultoría</span>
-            <h3>Asesorías estratégicas</h3>
-            <p>Asesoría para la viabilidad de proyectos, reenfoque de objetivos y ejecución de estrategia.</p>
-            <a class="link" href="#contacto">Más información <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
-          </div>
-        </article>
         <article class="program">
           <img src="assets/img/programa-conferencias.jpg" alt="Auditorio durante una conferencia" loading="lazy">
           <div class="program__body">
             <span class="tag">Speakers</span>
             <h3>Conferencias y experiencias</h3>
-            <p>Antonio y docentes senior de IMB disponibles para conferencias y eventos corporativos.</p>
-            <a class="link" href="#contacto">Más información <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+            <p>Conferencias, keynotes y experiencias para eventos corporativos, a cargo de referentes internacionales como Antonio Nieto-Rodríguez y docentes senior de IMB.</p>
+            <a class="link" href="#contacto" data-interes="conferencia">Solicitar una conferencia <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
           </div>
         </article>
+        <article class="program">
+          <img src="assets/img/programa-asesorias.jpg" alt="Consultor revisando un proyecto con un cliente" loading="lazy">
+          <div class="program__body">
+            <span class="tag">Consultoría</span>
+            <h3>Asesorías estratégicas</h3>
+            <p>Asesoría para la viabilidad de proyectos, el reenfoque de objetivos y la ejecución de la estrategia.</p>
+            <a class="link" href="#contacto" data-interes="consultoria">Más información <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="profile" id="antonio">
+        <div class="profile__media">
+          <img class="profile__photo" src="assets/img/antonio-nieto-rodriguez.jpg" alt="Antonio Nieto-Rodríguez" loading="lazy">
+          <img class="profile__book" src="assets/img/libro.png" alt="" loading="lazy">
+        </div>
+        <div class="profile__body">
+          <span class="tag tag--outline">Speaker destacado</span>
+          <h3>Antonio Nieto-Rodríguez</h3>
+          <p>Experto en gestión de proyectos y ejecución de estrategia, con trayectoria en sectores como banca, seguros, telecom, pharma y minería. Disponible para conferencias, experiencias y asesorías estratégicas.</p>
+          <div class="profile__actions">
+            <a class="btn btn--primary btn--filled" href="#contacto" data-interes="conferencia">Contratar a Antonio<svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+            <!-- PENDIENTE: link al perfil completo -->
+            <a class="link" href="#">Ver perfil completo <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -161,17 +220,17 @@
         <p class="section-head__eyebrow">Experiencia que respalda</p>
         <h2 class="section-head__title" id="tr-title">Trayectoria real</h2>
       </div>
-      <p class="lead">La experiencia de Antonio y el recorrido de IMB se traducen en conocimiento aplicado para organizaciones que necesitan avanzar de la estrategia a la ejecución.</p>
+      <p class="lead">Nuestros consultores trabajaron con empresas como…</p>
 
-      <!-- PENDIENTE: números -->
-      <dl class="stats">
-        <div class="stat"><dt class="stat__label">Lorem ipsum</dt><dd class="stat__value">00</dd></div>
-        <div class="stat"><dt class="stat__label">Lorem ipsum</dt><dd class="stat__value">00</dd></div>
-        <div class="stat"><dt class="stat__label">Lorem ipsum</dt><dd class="stat__value">00</dd></div>
-        <div class="stat"><dt class="stat__label">Lorem ipsum</dt><dd class="stat__value">00</dd></div>
-        <div class="stat"><dt class="stat__label">Lorem ipsum</dt><dd class="stat__value">00</dd></div>
-        <div class="stat"><dt class="stat__label">Lorem ipsum</dt><dd class="stat__value">00</dd></div>
-      </dl>
+      <!-- PENDIENTE: listado de empresas (pedido a atención al cliente). Scotiabank México a confirmar. Reemplazar los "Empresa" restantes. -->
+      <ul class="companies">
+        <li>Coca-Cola</li>
+        <li>Scotiabank México</li>
+        <li>Empresa</li>
+        <li>Empresa</li>
+        <li>Empresa</li>
+        <li>Empresa</li>
+      </ul>
 
       <!-- PENDIENTE: testimonio real -->
       <figure class="quote">
@@ -186,56 +245,114 @@
     <!-- MODALIDADES -->
     <section class="section" id="modalidades" aria-labelledby="mod-title">
       <div class="section-head">
-        <p class="section-head__eyebrow">Modalidad de trabajo</p>
-        <h2 class="section-head__title" id="mod-title">Nos adaptamos a ti</h2>
+        <p class="section-head__eyebrow">Modalidades de trabajo</p>
+        <h2 class="section-head__title" id="mod-title">Nos adaptamos a tu rubro<br>y a tus necesidades</h2>
       </div>
-      <p class="lead">Diseñamos cada experiencia de trabajo en función de los objetivos, el contexto y las necesidades de tu organización.</p>
+      <p class="lead">Diseñamos cada proyecto en función de los objetivos, el contexto y el sector de tu organización.</p>
       <div class="modes">
         <article class="mode">
           <img src="assets/img/modalidad-presencial.jpg" alt="" loading="lazy">
           <div class="mode__body">
-            <h3><svg class="icon" aria-hidden="true"><use href="#i-building"/></svg>Presencial</h3>
-            <p>Viajes de Antonio para trabajar directamente con los equipos y organizaciones.</p>
+            <h3><svg class="icon" aria-hidden="true"><use href="#i-building"/></svg>In house</h3>
+            <p>Trabajamos en tu organización, directamente con tus equipos.</p>
           </div>
         </article>
         <article class="mode">
           <img class="pos-bottom" src="assets/img/modalidad-virtual.jpg" alt="" loading="lazy">
           <div class="mode__body">
             <h3><svg class="icon" aria-hidden="true"><use href="#i-desktop"/></svg>Virtual</h3>
-            <p>Sesiones online para acompañar procesos y desarrollar capacidades.</p>
-          </div>
-        </article>
-        <article class="mode">
-          <img src="assets/img/modalidad-hibrido.jpg" alt="" loading="lazy">
-          <div class="mode__body">
-            <h3><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg>Híbrido</h3>
-            <p>Combinamos experiencias presenciales y virtuales según el proyecto.</p>
+            <p>Sesiones online en vivo para acompañar procesos y desarrollar capacidades, estés donde estés.</p>
           </div>
         </article>
       </div>
-      <p class="alliance">Una alianza IMB + Antonio Nieto-Rodríguez</p>
     </section>
 
-    <!-- EVENTO -->
-    <section class="section section--dark section--event" id="evento" aria-labelledby="ev-title">
+    <!-- NOVEDADES -->
+    <section class="section section--dark section--event" id="novedades" aria-labelledby="nov-title">
       <svg class="decor" viewBox="0 0 1132 649" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
         <circle cx="820" cy="560" r="560" fill="rgba(255,255,255,.04)"/>
         <g fill="none" stroke="rgba(255,255,255,.12)" stroke-width=".7"><circle cx="-600" cy="380" r="640"/><circle cx="-600" cy="380" r="652"/><circle cx="-600" cy="380" r="664"/><circle cx="-600" cy="380" r="676"/><circle cx="-600" cy="380" r="688"/><circle cx="-600" cy="380" r="700"/><circle cx="-600" cy="380" r="712"/><circle cx="-600" cy="380" r="724"/><circle cx="-600" cy="380" r="736"/><circle cx="-600" cy="380" r="748"/><circle cx="-600" cy="380" r="760"/><circle cx="-600" cy="380" r="772"/></g>
       </svg>
       <div class="section-head">
-        <p class="section-head__eyebrow">Próximo evento</p>
-        <h2 class="section-head__title" id="ev-title">Webinar:<br>IA y ejecución estratégica</h2>
+        <p class="section-head__eyebrow">Novedades</p>
+        <h2 class="section-head__title" id="nov-title">Lo que se viene</h2>
       </div>
-      <p class="lead">Descubre cómo la inteligencia artificial puede integrarse en la ejecución de la estrategia y potenciar la toma de decisiones de los equipos directivos.</p>
-      <div class="event">
-        <img src="assets/img/webinar-ia.jpg" alt="Mano robótica y mano humana frente a las letras AI" loading="lazy">
-        <div>
-          <p class="event__text">Una conversación de 30 minutos para explorar cómo la inteligencia artificial puede incorporarse a la ejecución estratégica.</p>
-          <ul class="event__meta">
-            <li><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg><time datetime="2026-05-15">Jueves, 15 de mayo del 2026</time></li>
-            <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><span>10:00 a.m. (GMT-5)</span></li>
-          </ul>
-          <a class="btn btn--secondary btn--filled" href="#contacto">Registrarme ahora<svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+      <p class="lead">Masterclasses de nuestros docentes y lanzamientos para seguir aprendiendo.</p>
+      <div class="news">
+        <!-- PENDIENTE: masterclass fija por ahora. Confirmar título, docente, fecha y hora. -->
+        <article class="news-card">
+          <img src="assets/img/webinar-ia.jpg" alt="Mano robótica y mano humana frente a las letras AI" loading="lazy">
+          <div class="news-card__body">
+            <span class="tag">Masterclass</span>
+            <h3>IA y ejecución estratégica</h3>
+            <p>Cómo integrar la inteligencia artificial en la ejecución de la estrategia y potenciar la toma de decisiones de los equipos directivos.</p>
+            <ul class="event__meta">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg><span>Fecha a confirmar</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-user"/></svg><span>Docente IMB</span></li>
+            </ul>
+            <a class="btn btn--secondary btn--filled" href="#contacto" data-interes="masterclass">Quiero participar<svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <!-- PENDIENTE: fecha de presentación del libro. -->
+        <article class="news-card">
+          <div class="news-card__media news-card__media--book"><img src="assets/img/libro.png" alt="Libro de Antonio Nieto-Rodríguez" loading="lazy"></div>
+          <div class="news-card__body">
+            <span class="tag">Presentación</span>
+            <h3>Presentación del libro de Antonio Nieto-Rodríguez</h3>
+            <p>Acompáñanos en el lanzamiento de su nuevo libro. Déjanos tus datos y te avisamos apenas confirmemos la fecha.</p>
+            <ul class="event__meta">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg><span>Fecha a definir</span></li>
+            </ul>
+            <a class="btn btn--secondary btn--filled" href="#contacto" data-interes="libro">Avisarme<svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="section" id="nosotros" aria-labelledby="ns-title">
+      <div class="section-head">
+        <p class="section-head__eyebrow">Sobre nosotros</p>
+        <h2 class="section-head__title" id="ns-title">IMB</h2>
+      </div>
+      <!-- PENDIENTE: validar textos e imágenes de cada slide con IMB. -->
+      <div class="slider" aria-roledescription="carrusel" aria-label="Sobre IMB">
+        <div class="slider__track" tabindex="0">
+          <article class="slide" aria-roledescription="diapositiva" aria-label="1 de 4">
+            <img src="assets/img/diferencial-respaldo.jpg" alt="" loading="lazy">
+            <div class="slide__body">
+              <h3>Quiénes somos</h3>
+              <p>IMB es una institución dedicada a la formación ejecutiva y la consultoría, que acompaña a líderes y organizaciones en su desarrollo.</p>
+            </div>
+          </article>
+          <article class="slide" aria-roledescription="diapositiva" aria-label="2 de 4">
+            <img src="assets/img/programa-asesorias.jpg" alt="" loading="lazy">
+            <div class="slide__body">
+              <h3>Qué hacemos</h3>
+              <p>Consultoría, certificaciones internacionales, auditorías y programas de formación diseñados para resolver desafíos reales.</p>
+            </div>
+          </article>
+          <article class="slide" aria-roledescription="diapositiva" aria-label="3 de 4">
+            <img src="assets/img/diferencial-ejecucion.jpg" alt="" loading="lazy">
+            <div class="slide__body">
+              <h3>Cómo trabajamos</h3>
+              <p>Con un plantel de consultores y docentes con experiencia en grandes empresas, y metodologías de referencia en la industria.</p>
+            </div>
+          </article>
+          <article class="slide" aria-roledescription="diapositiva" aria-label="4 de 4">
+            <img src="assets/img/diferencial-metodologia.jpg" alt="" loading="lazy">
+            <div class="slide__body">
+              <h3>Nuestro compromiso</h3>
+              <p>Convertir el conocimiento especializado en resultados concretos y medibles para cada organización.</p>
+              <!-- PENDIENTE: link al sitio de IMB Institute -->
+              <a class="link" href="#">Conocer IMB Institute <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+            </div>
+          </article>
+        </div>
+        <div class="slider__controls">
+          <button class="slider__btn" type="button" data-dir="-1" aria-label="Anterior"><svg class="icon" aria-hidden="true"><use href="#i-chevron-left"/></svg></button>
+          <div class="slider__dots"></div>
+          <button class="slider__btn" type="button" data-dir="1" aria-label="Siguiente"><svg class="icon" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
         </div>
       </div>
     </section>
@@ -248,64 +365,57 @@
       <div class="contact">
         <div class="contact__intro">
           <div class="section-head">
-            <p class="section-head__eyebrow">Formulario</p>
-            <h2 class="section-head__title" id="ct-title">Conversemos</h2>
+            <p class="section-head__eyebrow">Hablemos</p>
+            <h2 class="section-head__title" id="ct-title">Tu próximo paso empieza con una conversación</h2>
           </div>
-          <p class="lead">Cuéntanos brevemente qué necesita tu organización. Nuestro equipo revisará tu solicitud y coordinaremos el siguiente paso.</p>
+          <!-- PENDIENTE: confirmar que la primera reunión es sin costo y el plazo de respuesta. -->
+          <p class="lead">Déjanos tus datos y un consultor te contacta para entender tu desafío y proponerte el camino más adecuado.</p>
+          <ul class="contact__perks">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Primera reunión sin costo</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Respuesta en menos de 24 h hábiles</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Propuesta a medida de tu organización</li>
+          </ul>
         </div>
 
         <form class="contact-form" action="" method="post" novalidate>
-          <div class="contact-form__head">
-            <h3>Hablemos de tu desafío</h3>
-            <p>Cuéntanos brevemente qué necesita tu organización y coordinemos una conversación con nuestro equipo.</p>
+          <div class="field field--full">
+            <label class="field__label" for="f-nombre">Nombre y apellido</label>
+            <input class="input" id="f-nombre" name="nombre" autocomplete="name" required>
           </div>
           <div class="field">
-            <label class="field__label" for="f-nombres">Nombres</label>
-            <input class="input" id="f-nombres" name="nombres" autocomplete="given-name" required>
+            <label class="field__label" for="f-email">Correo corporativo</label>
+            <input class="input" id="f-email" name="email" type="email" autocomplete="email" required>
           </div>
           <div class="field">
-            <label class="field__label" for="f-apellidos">Apellidos</label>
-            <input class="input" id="f-apellidos" name="apellidos" autocomplete="family-name" required>
+            <label class="field__label" for="f-telefono">Teléfono / WhatsApp</label>
+            <input class="input" id="f-telefono" name="telefono" type="tel" autocomplete="tel" required>
           </div>
           <div class="field field--full">
-            <label class="field__label" for="f-empresa">Empresa</label>
+            <label class="field__label" for="f-empresa">Empresa y cargo</label>
             <input class="input" id="f-empresa" name="empresa" autocomplete="organization">
           </div>
           <div class="field field--full">
-            <label class="field__label" for="f-mensaje">¿Cómo podemos ayudarte?</label>
-            <textarea class="input" id="f-mensaje" name="mensaje" rows="3" required></textarea>
+            <label class="field__label" for="f-interes">¿Qué necesitas?</label>
+            <select class="input" id="f-interes" name="interes" required>
+              <option value="">Selecciona una opción</option>
+              <option value="consultoria">Consultoría para mi empresa</option>
+              <option value="certificacion">Certificaciones para mi equipo</option>
+              <option value="auditoria">Auditoría</option>
+              <option value="estandares">Implementación de protocolos o estándares</option>
+              <option value="ia">Automatización con IA</option>
+              <option value="conferencia">Conferencia o experiencia con un speaker</option>
+              <option value="masterclass">Participar de una masterclass</option>
+              <option value="libro">Presentación del libro</option>
+              <option value="otro">Otro</option>
+            </select>
           </div>
-          <input type="hidden" name="interes" id="f-interes">
-          <button class="btn btn--secondary btn--filled" type="submit">Enviar<svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
+          <div class="field field--full">
+            <label class="field__label" for="f-mensaje">Cuéntanos tu desafío <span class="field__optional">(opcional)</span></label>
+            <textarea class="input" id="f-mensaje" name="mensaje" rows="3"></textarea>
+          </div>
+          <button class="btn btn--secondary btn--filled" type="submit">Quiero que me contacten<svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
           <p class="contact-form__status" role="status" aria-live="polite"></p>
         </form>
-      </div>
-    </section>
-
-    <!-- NOSOTROS -->
-    <section class="section" id="nosotros" aria-labelledby="ns-title">
-      <div class="section-head">
-        <p class="section-head__eyebrow">Sobre nosotros</p>
-        <h2 class="section-head__title" id="ns-title">Líderes con trayectoria.<br>Instituciones con propósito</h2>
-      </div>
-      <p class="lead">Combinamos la experiencia de líderes con trayectoria comprobada y el respaldo académico de IMB para convertir conocimiento especializado en resultados concretos para organizaciones.</p>
-      <div class="about">
-        <div class="about__media">
-          <img class="about__photo" src="assets/img/antonio-nieto-rodriguez.jpg" alt="Antonio Nieto-Rodríguez" loading="lazy">
-          <img class="about__book" src="assets/img/libro.png" alt="" loading="lazy">
-        </div>
-        <div>
-          <div class="about__item">
-            <h3>Antonio Nieto-Rodríguez</h3>
-            <p>Experto en gestión de proyectos y ejecución de estrategia, con trayectoria en sectores como banca, seguros, telecom, pharma y minería.</p>
-            <a class="link" href="#">Ver perfil completo <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
-          </div>
-          <div class="about__item">
-            <h3>IMB Institute</h3>
-            <p>Una institución que aporta respaldo académico y experiencia al desarrollo de soluciones para líderes y organizaciones.</p>
-            <a class="link" href="#">Conocer IMB Institute <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
-          </div>
-        </div>
       </div>
     </section>
   </div>
