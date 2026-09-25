@@ -48,7 +48,9 @@ img { display: block; max-width: 100%; }
 /* ---------- Hero ---------- */
 .hero { position: relative; display: grid; place-items: center; min-height: 700px; padding: var(--spacing-8xl) var(--spacing-md);
   color: var(--content-neutral-inverse); text-align: center;
-  background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url("../assets/img/fondo.jpg") 20% center / cover no-repeat #000; }
+  /* PENDIENTE: foto del profesor oculta hasta confirmar permiso. Para mostrarla:
+     background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url("../assets/img/fondo.jpg") 20% center / cover no-repeat #000; */
+  background: #000; }
 .hero__content { display: flex; flex-direction: column; align-items: center; max-width: 640px; }
 .hero__text { max-width: 520px; }
 .hero__eyebrow { margin: 0 0 var(--spacing-md); font: var(--weight-bold) var(--type-eyebrow)/var(--lh-eyebrow) var(--font-heading); text-transform: uppercase; }
